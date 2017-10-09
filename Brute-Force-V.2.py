@@ -51,3 +51,4 @@ for linha in arquivo.readlines():
             print('\n [!] Senha Encontrada %s' % linha)
             print('-----------------------------------')
             time.sleep(10)
+            exit()
