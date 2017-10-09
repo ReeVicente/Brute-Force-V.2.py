@@ -40,7 +40,7 @@ for linha in arquivo.readlines():
         smtpclient.starttls()
         linha = linha.strip()
         smtpclient.login(user, linha)
-        print('\n [!] 1 Senha Encontrada: %s' % linha)
+        print('\n [!] Senha Encontrada: %s' % linha)
         print('-----------------------------------')
         break
     except Exception as erro:
