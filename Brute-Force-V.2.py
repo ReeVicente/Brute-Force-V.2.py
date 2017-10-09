@@ -26,7 +26,14 @@ print('\n - OBS: Script feito para "Fins Educativos".')
 ####################################################################################
 
 user = input('\n - Digite aqui o E-mail alvo: ')
-arquivo = open("lista.txt", "r")
+try:
+    diretorio = input('\n - Informe o caminho da sua wordlist (vazio para padrão ./lista.txt): ')
+except SyntaxError:
+    diretorio = 'lista.txt'
+    
+arquivo = open(diretorio, "r")
+    
+    
 for linha in arquivo.readlines():
     try:
         
